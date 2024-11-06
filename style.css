@@ -1,0 +1,144 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color : rgb(168, 163, 163);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #1abe72;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 234, 255);
+}
+
+.navbar-logo span {
+    color: rgb(170, 255, 0);
+}
+
+.navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.container-content {
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content {
+    width: 20%;
+    height: 20%;
+}
+
+.container-footer {
+    background-color: rgb(42, 21, 21);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0rem;
+    width: 60%;
+    height: 100rpx;
+    overflow-y: auto;
+}
+
+.p-footer {
+    font-size: 40px;
+    color: white;
+}
+
+/* Media Quaries */
+
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    } 
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    } 
+}
+
+/*Phone */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    } 
+}
